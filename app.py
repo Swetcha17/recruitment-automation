@@ -6,6 +6,28 @@ import re
 import json
 import requests
 
+def ensure_data_exists():
+    parsed_dir = Path("data/parsed")
+    index_dir = Path("data/index")
+    
+    if not parsed_dir.exists() or not list(parsed_dir.glob("*.json")):
+        st.warning("No candidate data found. Please add resumes to data/resumes/ folder and run setup.")
+        st.info("For demo purposes, the system is ready but needs resume data to be added.")
+        st.stop()
+    
+    if not (index_dir / "faiss.index").exists():
+        with st.spinner("Building search indexes... (first time only)"):
+            try:
+                subprocess.run([sys.executable, "build_faiss.py"], check=True)
+                subprocess.run([sys.executable, "build_fts.py"], check=True)
+                st.success("Indexes built successfully!")
+                st.rerun()
+            except Exception as e:
+                st.error(f"Failed to build indexes: {e}")
+                st.stop()
+
+ensure_data_exists()
+
 def check_password():
     def password_entered():
         if st.session_state["password"] == "your-secret-password":
