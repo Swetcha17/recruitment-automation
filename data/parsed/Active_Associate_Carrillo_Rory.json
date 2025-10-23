@@ -1,0 +1,97 @@
+{
+  "candidate_id": "Active_Associate_Carrillo_Rory",
+  "name": "RORY CARRILLO",
+  "role_category": "Active Associate",
+  "titles": [
+    "Medical Device Consultant",
+    "Lead and support MDD to MDR transitions\nLead",
+    "Lead Systems Engineer"
+  ],
+  "skills": [
+    {
+      "name": "c++",
+      "level": "mentioned"
+    },
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "sql",
+      "level": "mentioned"
+    },
+    {
+      "name": "ml",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "deep learning",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso 13485",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "risk management",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "git",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 15,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "RORY CARRILLO  SUMMARY OF QUALIFICATIONS:  Over 15 years of experience providing medical device design, development, global regulatory, and quality system implementation services (FDA QSR, ISO 13485). Also provides technical feasibility assessments, product viability assessments, new technology research, clinical study planning and implementation, usability study (including ethnography studies) guidance and implementation, and clinical evaluation reports (CER) for EU.   Extensive background in i",
+  "email": null,
+  "phone": null,
+  "full_text_length": 9633,
+  "source_file": "Active Associates/Carrillo, Rory/Carrillo, Rory MWA CV 0320.docx",
+  "parsed_date": "2025-10-15T12:34:24.861847"
+}

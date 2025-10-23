@@ -1,0 +1,28 @@
+{
+  "candidates_by_stage": {
+    "Uploaded": 732
+  },
+  "stage_transitions": [],
+  "time_to_present": [],
+  "time_to_hire": [],
+  "conversions": {
+    "uploaded": 732,
+    "reviewed": 0,
+    "interviewed": 0,
+    "offered": 0,
+    "hired": 0
+  },
+  "rejections_by_reason": {},
+  "candidates_by_source": {
+    "QA & Regulatory": 263,
+    "Validation": 126,
+    "Medical Device": 71,
+    "Computerized Systems & IT": 37,
+    "Active Associate": 140,
+    "Project Management": 54,
+    "Manufacturing Specialist": 7,
+    "Process Engineer": 29,
+    "Automation Engineer": 5
+  },
+  "last_updated": "2025-10-22T20:51:49.417142"
+}

@@ -1,0 +1,68 @@
+{
+  "candidate_id": "Active_Associate_James_Jeff",
+  "name": "Jeff James, MBA, CPM",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant",
+    "Certified Project Manager"
+  ],
+  "skills": [
+    {
+      "name": "react",
+      "level": "mentioned"
+    },
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "rust",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "project management",
+      "level": "mentioned"
+    },
+    {
+      "name": "six sigma",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 25,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Jeff James, MBA, CPM PROFESSIONAL SUMMARY:\t  With over 25 years of experience spanning the life sciences ecosystem, Jeff James specializes in building strategic relationships that generate consistent revenue growth for life sciences support services. As a trusted advisor to C-suite executives, Jeff transforms reactive sales approaches into proactive pipeline development strategies that deliver measurable results. His unique methodology combines deep industry knowledge with relationship-focused",
+  "email": null,
+  "phone": null,
+  "full_text_length": 3579,
+  "source_file": "Active Associates/James, Jeff/James, Jeff AVS CV 080125.docx",
+  "parsed_date": "2025-10-15T12:34:25.317418"
+}

@@ -1,0 +1,81 @@
+{
+  "candidate_id": "CAND_20251022205130791522",
+  "name": "Khatami, Ahmad",
+  "role_category": "Medical Device",
+  "titles": [
+    "Medical Device"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "react",
+      "confidence": 0.7
+    },
+    {
+      "name": "git",
+      "confidence": 0.7
+    },
+    {
+      "name": "leadership",
+      "confidence": 0.9
+    },
+    {
+      "name": "project management",
+      "confidence": 0.7
+    }
+  ],
+  "experience_years": 15,
+  "education": [
+    {
+      "degree": "B.S.",
+      "field": "PROFESSIONAL SUMMARY"
+    },
+    {
+      "degree": "Bachelor",
+      "field": "Science"
+    },
+    {
+      "degree": "ma",
+      "field": "certified"
+    },
+    {
+      "degree": "MS",
+      "field": "Project"
+    },
+    {
+      "degree": "MS",
+      "field": "Office Suite"
+    },
+    {
+      "degree": "ms",
+      "field": "in releasing documents"
+    },
+    {
+      "degree": "MS",
+      "field": "processes"
+    },
+    {
+      "degree": "ms",
+      "field": "on DNA sequencing instruments"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": " Project management, PM"
+  },
+  "email": null,
+  "phone": null,
+  "location": " Project management, PM",
+  "work_authorization": null,
+  "availability": null,
+  "resume_snippet": "SUMMARY: Extensive product engineering leadership experience focused on medical devices. Staff QA engineer, experienced in supporting manufacturing quality teams. Oversees product development from inception to long-term manufacturing for design and regulatory compliance with a focus on NPI / pilot and sustaining instrument manufacturing environments. Expert in overseas contract manufacturing (i.e. Flextronics) supporting new or existing products releases and distribution. Monitors in-house / sup",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/Medical Device/Khatami, Ahmad/Khatami, Ahmad AVS CV 051625.docx",
+  "parsed_date": "2025-10-22T20:51:30.791542",
+  "status": "New",
+  "stage": "Uploaded"
+}

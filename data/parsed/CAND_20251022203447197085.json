@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_20251022203447197085",
+  "name": "Doran, Jake",
+  "role_category": "QA & Regulatory",
+  "titles": [
+    "QA & Regulatory"
+  ],
+  "skills": [
+    {
+      "name": "php",
+      "confidence": 0.7
+    }
+  ],
+  "experience_years": 2,
+  "education": [
+    {
+      "degree": "B.S.",
+      "field": "SKILLS"
+    },
+    {
+      "degree": "B.S.",
+      "field": "in Bioengineering"
+    },
+    {
+      "degree": "MS",
+      "field": "Office"
+    },
+    {
+      "degree": "ms",
+      "field": "Utilized CAD sketches and basic tools and electronics for early"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": " CAD, MS"
+  },
+  "email": null,
+  "phone": null,
+  "location": " CAD, MS",
+  "work_authorization": null,
+  "resume_snippet": "Jake Doran, B.S. SKILLS: Technical: CAD, MS Office, GraphPad Prism, Scanning Electron Microscopy (SEM) Device Testing: Design Validation Testing, Root Cause Analysis, Test Method Development, Prototype Assembly Regulatory Systems: DHF Documentation, Cleanroom Practices, ISO 13485, ISO 14971, 21 CFR 820.30 CONSULTING AND WORK EXPERIENCE: AVS Life Sciences, PA and CA 2025 - Present Independent Consultant Consults with clients in the pharmaceutical, medical device, biologic, and biotechnology indus",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/QA & Regulatory/Doran, Jake/Doran, Jake AVS CV 062025.docx",
+  "parsed_date": "2025-10-22T20:34:47.197094",
+  "status": "New"
+}

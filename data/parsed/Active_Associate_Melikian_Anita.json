@@ -1,0 +1,52 @@
+{
+  "candidate_id": "Active_Associate_Melikian_Anita",
+  "name": "Anita Melikian",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant",
+    "Project Lead"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 1,
+  "location": "remote",
+  "work_authorization": "EAD",
+  "resume_snippet": "Anita Melikian  PROFESSIONAL SUMMARY:  Entrepreneur, expert in drug discovery & development, and Intellectual Property patent agent. Experience in large pharmaceutical companies such as Sanofi in France, and Eli-Lilly in the US, as well as smaller companies, including start-ups. Co-founded Squal Pharma in the US with science developed in France. At a startup company in the Bay Area, as one of the first scientists in the department, responsible for all logistics and strategic planning in an expa",
+  "email": null,
+  "phone": null,
+  "full_text_length": 9440,
+  "source_file": "Active Associates/Melikian, Anita/Melikian, Anita MWA CV 0322.docx",
+  "parsed_date": "2025-10-15T12:34:25.828248"
+}

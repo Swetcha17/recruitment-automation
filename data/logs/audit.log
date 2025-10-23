@@ -1,0 +1,46 @@
+2025-10-08T20:31:18.503686 | query: 3 years in marketing | results: 12
+2025-10-08T20:36:08.933426 | query: Automation | results: 0
+2025-10-08T20:36:19.880098 | query: Automation  | results: 0
+2025-10-08T20:36:46.176667 | query: Automation  | results: 12
+2025-10-08T21:11:21.858416 | query: python  | results: 7
+2025-10-08T21:13:00.999073 | query: automation | results: 10
+2025-10-08T21:19:13.587288 | query: machine learning | results: 4
+2025-10-08T21:19:28.756642 | query: 5 years experience | results: 10
+2025-10-08T21:19:49.573220 | query: data science and machine learning  | results: 10
+2025-10-08T21:19:53.435501 | query: data science and machine learning  | results: 10
+2025-10-08T21:19:54.103770 | query: data science and machine learning  | results: 10
+2025-10-08T21:19:54.378888 | query: data science and machine learning  | results: 10
+2025-10-08T21:19:54.556904 | query: data science and machine learning  | results: 10
+2025-10-08T21:19:54.740270 | query: data science and machine learning  | results: 10
+2025-10-08T21:20:08.922699 | query: machine learning and data science | results: 10
+2025-10-08T21:20:11.805326 | query: machine learning and data science | results: 10
+2025-10-08T21:20:29.346641 | query: data science and machine learning  | results: 10
+2025-10-08T21:20:31.039900 | query: data science and machine learning  | results: 10
+2025-10-08T21:20:48.691490 | query: data science and machine learning  | results: 23
+2025-10-08T21:21:08.321822 | query: data science and machine learning  | results: 23
+2025-10-08T21:24:26.384818 | reveal_pii: Active_Associate_Goldenthal_Allen
+2025-10-10T12:50:17.113002 | query: Data Science  | results: 20
+2025-10-10T12:50:26.753431 | query: Data Science  | results: 13
+2025-10-10T12:50:56.871318 | query: Data Science  | results: 20
+2025-10-10T12:51:16.990942 | query: Data Science and machine learning  | results: 20
+2025-10-10T12:51:41.091889 | query: Data Science and machine learning  | results: 1
+2025-10-10T12:52:26.573627 | query: deltaV | results: 0
+2025-10-10T12:52:30.598735 | query: delta V | results: 1
+2025-10-10T12:54:24.716087 | query: delta V | results: 20
+2025-10-15T12:22:45.210792 | search | query='data ' | results=10
+2025-10-15T12:22:45.678825 | search | query='data ' | results=10
+2025-10-15T12:22:55.833374 | reveal_pii | candidate=QA_and_Regulatory_Taaghol_Alan
+2025-10-15T12:23:24.135260 | search | query='data ' | results=10
+2025-10-15T12:25:44.469883 | user:swetchareddy | search | query='data' | results=15
+2025-10-15T12:34:35.927566 | user:swetchareddy | search | query='data' | results=15
+2025-10-16T12:24:21.747134 | user:recruiter@avs.com | ai_chat | query='find me a senior financial analyst' | results=10
+2025-10-22T20:38:26.030710 | user:recruiter@avs.com | search | query='Python ' | results=14
+2025-10-22T20:38:50.532169 | user:recruiter@avs.com | search | query='Automation' | results=1
+2025-10-22T20:39:14.632972 | user:recruiter@avs.com | search | query='Automation' | results=1
+2025-10-22T20:39:21.183773 | user:recruiter@avs.com | search | query='Automation' | results=3
+2025-10-22T20:39:39.250344 | user:recruiter@avs.com | search | query='3 ' | results=3
+2025-10-22T20:39:47.797418 | user:recruiter@avs.com | search | query='3 ' | results=3
+2025-10-22T20:56:59.956762 | user:recruiter@avs.com | search | query='AWS' | results=15
+2025-10-22T20:57:38.172486 | user:recruiter@avs.com | ai_chat | query='Find me a person with 5 year experience in data' | results=10
+2025-10-22T20:57:44.725394 | user:recruiter@avs.com | ai_chat | query='Find me a person with 5 year experience in data' | results=10
+2025-10-22T20:58:08.114370 | user:recruiter@avs.com | search | query='was' | results=7

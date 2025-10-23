@@ -1,0 +1,20 @@
+{
+  "vacancy_id": "VAC_Automation_Engineer_20251022205155",
+  "role_name": "Automation Engineer",
+  "status": "Open",
+  "created_date": "2025-10-22T20:51:55.630919",
+  "assigned_candidates": [],
+  "requirements": {
+    "required_skills": [],
+    "preferred_skills": [],
+    "min_experience": 0,
+    "education": [],
+    "work_authorization": null,
+    "location": null
+  },
+  "hiring_manager": null,
+  "department": null,
+  "priority": "Medium",
+  "target_hire_date": null,
+  "notes": []
+}

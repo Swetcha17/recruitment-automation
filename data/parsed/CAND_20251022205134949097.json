@@ -1,0 +1,65 @@
+{
+  "candidate_id": "CAND_20251022205134949097",
+  "name": "Chong, Melissa Lam",
+  "role_category": "Project Management",
+  "titles": [
+    "Project Management"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "leadership",
+      "confidence": 0.9
+    },
+    {
+      "name": "communication",
+      "confidence": 0.9
+    },
+    {
+      "name": "project management",
+      "confidence": 0.9
+    }
+  ],
+  "experience_years": 18,
+  "education": [
+    {
+      "degree": "B.S.",
+      "field": "PROFESSIONAL SUMMARY"
+    },
+    {
+      "degree": "BACHELOR",
+      "field": "SCIENCE"
+    },
+    {
+      "degree": "ms",
+      "field": "Engineering Group"
+    },
+    {
+      "degree": "Master",
+      "field": "Data team of"
+    },
+    {
+      "degree": "MASTER",
+      "field": "SCIENCE"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": null
+  },
+  "email": null,
+  "phone": null,
+  "location": null,
+  "work_authorization": null,
+  "availability": null,
+  "resume_snippet": "SUMMARY: A highly organized and collaborative project management professional with 17 years of experience in the biotechnology industry and a proven track record of leading and executing projects in both clinical and commercial manufacturing settings. Expertise includes developing and managing detailed timelines, budgets, and resource allocation, while effectively integrating cross-functional teams. Proficient in utilizing various project management tools for efficient workflow and data manageme",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/Project Management/Chong, Melissa Lam/Chong, Melissa Lam AVS CV 0407.docx",
+  "parsed_date": "2025-10-22T20:51:34.949110",
+  "status": "New",
+  "stage": "Uploaded"
+}

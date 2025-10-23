@@ -1,0 +1,70 @@
+{
+  "candidate_id": "QA_and_Regulatory_Doran_Jake",
+  "name": "Jake Doran, B.S.",
+  "role_category": "QA & Regulatory",
+  "titles": [
+    "Independent Consultant",
+    "Team Lead",
+    "Project Manager",
+    "Biomedical Engineer"
+  ],
+  "skills": [
+    {
+      "name": "php",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso 13485",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "lean",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 0,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Jake Doran, B.S. SKILLS:  Technical: CAD, MS Office, GraphPad Prism, Scanning Electron Microscopy (SEM)  Device Testing: Design Validation Testing, Root Cause Analysis, Test Method Development, Prototype Assembly Regulatory Systems: DHF Documentation, Cleanroom Practices, ISO 13485, ISO 14971, 21 CFR 820.30  CONSULTING AND WORK EXPERIENCE:   AVS Life Sciences, PA and CA\t2025 - Present Independent Consultant  Consults with clients in the pharmaceutical, medical device, biologic, and biotechnolog",
+  "email": null,
+  "phone": null,
+  "full_text_length": 3495,
+  "source_file": "AVS CV's/QA & Regulatory/Doran, Jake/Doran, Jake AVS CV 062025.docx",
+  "parsed_date": "2025-10-15T12:34:23.320236"
+}

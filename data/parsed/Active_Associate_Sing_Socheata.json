@@ -1,0 +1,83 @@
+{
+  "candidate_id": "Active_Associate_Sing_Socheata",
+  "name": "Socheata Sing",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant",
+    "Senior QA Technical Manager",
+    "Associate Director",
+    "Senior Manager",
+    "QA Manager"
+  ],
+  "skills": [
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "qa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality systems",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 15,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Socheata Sing  PROFESSIONAL SUMMARY: 21+ years\u2019 experience in Quality Assurance, Quality Control, and Validation, including 15 years in supervisory and management role. Background in Combination Products, Biologics, Pharmaceutical, and Medical Device manufacturing environment from early phase to late stage clinical development and commercial products. Managed regulatory inspections, and client and partner audits. Developed and managed Quality systems processes  Knowledge of 6 Sigma and risk ass",
+  "email": null,
+  "phone": null,
+  "full_text_length": 11514,
+  "source_file": "Active Associates/Sing, Socheata/Sing, Socheata MWA CV 0122.docx",
+  "parsed_date": "2025-10-15T12:34:26.681943"
+}

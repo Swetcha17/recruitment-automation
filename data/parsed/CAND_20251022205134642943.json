@@ -1,0 +1,53 @@
+{
+  "candidate_id": "CAND_20251022205134642943",
+  "name": "Weisshar, Jeremy",
+  "role_category": "Project Management",
+  "titles": [
+    "Project Management"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "react",
+      "confidence": 0.7
+    },
+    {
+      "name": "express",
+      "confidence": 0.7
+    },
+    {
+      "name": "leadership",
+      "confidence": 0.9
+    },
+    {
+      "name": "project management",
+      "confidence": 0.9
+    }
+  ],
+  "experience_years": 12,
+  "education": [
+    {
+      "degree": "B.A.",
+      "field": "PROFESSIONAL SUMMARY"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": " Engineering, MS"
+  },
+  "email": null,
+  "phone": null,
+  "location": " Engineering, MS",
+  "work_authorization": null,
+  "availability": null,
+  "resume_snippet": "SUMMARY: Operational leader with expertise in fast-paced GMP environments having direct experience in Facilities, Qualification, Engineering, MSAT, Process Development, Process Validation, and Operations. Known for inspiring others to deliver and feel their work is purpose driven by leveraging extensive technical background. Design, qualification, troubleshooting, and project management for CAPEX process equipment, facilities, and utilities. Experienced author and collaborator for Change Control",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/Project Management/Weisshar, Jeremy/Weisshar, Jeremy AVS CV 060325.docx",
+  "parsed_date": "2025-10-22T20:51:34.642954",
+  "status": "New",
+  "stage": "Uploaded"
+}

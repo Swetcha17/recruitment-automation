@@ -1,0 +1,86 @@
+{
+  "candidate_id": "Active_Associate_Both_Alexander",
+  "name": "Alexander Both, A.A., M.S.",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant",
+    "Associate Director",
+    "Develop and control budget\n\nLead",
+    "Degree of Quality Manager"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "aws",
+      "level": "mentioned"
+    },
+    {
+      "name": "gcp",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "qa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "csv",
+      "level": "mentioned"
+    },
+    {
+      "name": "21 cfr part 11",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 20,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Alexander Both, A.A., M.S. PROFESSIONAL SUMMARY:\t More than 20 years of experience in clinical quality assurance (management and auditing) in global pharmaceutical / biotech and CRO industry. Profound knowledge of GCP and GLP guidelines, regulations and laws for clinical studies in the US and Europe and general quality management tools. Demonstrated ability to effectively interact with FDA and European Regulatory Authorities. Excellent leadership and communication skills. Strong drive for result",
+  "email": null,
+  "phone": null,
+  "full_text_length": 7667,
+  "source_file": "Active Associates/Both, Alexander/Both, Alexander AVS CV 091025.docx",
+  "parsed_date": "2025-10-15T12:34:24.798171"
+}

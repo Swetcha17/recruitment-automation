@@ -1,0 +1,75 @@
+{
+  "candidate_id": "CAND_20251022203448083994",
+  "name": "Diaz, Carlos",
+  "role_category": "QA & Regulatory",
+  "titles": [
+    "QA & Regulatory"
+  ],
+  "skills": [
+    {
+      "name": "python",
+      "confidence": 0.7
+    },
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "rust",
+      "confidence": 0.7
+    },
+    {
+      "name": "devops",
+      "confidence": 0.7
+    },
+    {
+      "name": "machine learning",
+      "confidence": 0.9
+    },
+    {
+      "name": "git",
+      "confidence": 0.7
+    },
+    {
+      "name": "agile",
+      "confidence": 0.9
+    },
+    {
+      "name": "scrum",
+      "confidence": 0.7
+    },
+    {
+      "name": "leadership",
+      "confidence": 0.7
+    },
+    {
+      "name": "communication",
+      "confidence": 0.7
+    }
+  ],
+  "experience_years": 10,
+  "education": [
+    {
+      "degree": "ms",
+      "field": "with real"
+    },
+    {
+      "degree": "ma",
+      "field": "Sports Betting"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": " Scrum, PM"
+  },
+  "email": null,
+  "phone": null,
+  "location": " Scrum, PM",
+  "work_authorization": null,
+  "resume_snippet": "SUMMARY: I am a seasoned Senior Management Consultant (Portfolio, Program, Project, Change initiatives) with over 26 years of commanding complex, high-stakes initiatives across Pharma, Banking & Finance, Gambling, Airlines, Telecom, and beyond. A natural-born strategist forged in the crucible of Spain, the USA, and LATAM, I wield a rare blend of visionary leadership, and operational mastery. From orchestrating multi-million-euro portfolios to driving enterprise-wide transformations, my career is",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/QA & Regulatory/Diaz, Carlos/Diaz, Carlos AVS CV 052725.docx",
+  "parsed_date": "2025-10-22T20:34:48.084000",
+  "status": "New"
+}

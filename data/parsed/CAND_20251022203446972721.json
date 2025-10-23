@@ -1,0 +1,59 @@
+{
+  "candidate_id": "CAND_20251022203446972721",
+  "name": "Reichert, Peter",
+  "role_category": "Project Management",
+  "titles": [
+    "Project Management"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "leadership",
+      "confidence": 0.7
+    },
+    {
+      "name": "analytical",
+      "confidence": 0.9
+    },
+    {
+      "name": "project management",
+      "confidence": 0.9
+    }
+  ],
+  "experience_years": 0,
+  "education": [
+    {
+      "degree": "Master",
+      "field": "Plans"
+    },
+    {
+      "degree": "ms",
+      "field": "to determine compliance"
+    },
+    {
+      "degree": "ma",
+      "field": "AG"
+    },
+    {
+      "degree": "ma",
+      "field": "AG"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": "  At Bayer Healthcare in Emeryville, CA"
+  },
+  "email": null,
+  "phone": null,
+  "location": "  At Bayer Healthcare in Emeryville, CA",
+  "work_authorization": null,
+  "resume_snippet": "profile. \u2022 Manages Validation personnel executing validation studies. Delta Project Management, San Francisco, CA 10/17 to 12/18 Independent Consultant Provided consultant services to Bayer Pharmaceuticals D ivision. Worked as a validation contractor in the QC Raw Materials testing group which receives, tests and releases raw materials for all aspects of GMP Manufacturing at the Bayer Berkeley Supply Center. Primary project was to manage raw material analytical method validation/ transfer activi",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/Project Management/Reichert, Peter/Reichert_MWA CV 0419.pdf",
+  "parsed_date": "2025-10-22T20:34:46.972736",
+  "status": "New"
+}

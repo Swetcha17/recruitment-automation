@@ -1,0 +1,95 @@
+{
+  "candidate_id": "Active_Associate_Nielsen_Carl",
+  "name": "Carl Nielsen",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant",
+    "Senior QA Manager",
+    "QA Manager\nLead",
+    "Teach QA Specialist",
+    "Technical Manger \nLead"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "automation",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "qa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality systems",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "project management",
+      "level": "mentioned"
+    },
+    {
+      "name": "lean",
+      "level": "mentioned"
+    },
+    {
+      "name": "rest",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 20,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Carl Nielsen  PROFESSIONAL SUMMARY: Actively lead an ambitious organization through the successful challenging implementation of its strategic visionary goals. Create value through continual improvement processes with the goal of building a sustainable competitive edge for the company.  CORE COMPETENCIES: This is should be a bulleted list.  CONSULTING AND WORK EXPERIENCE:  MWA Consulting, Inc., CA\t2021 - Present Independent Consultant Consults with clients in the pharmaceutical, medical device,",
+  "email": null,
+  "phone": null,
+  "full_text_length": 8234,
+  "source_file": "Active Associates/Nielsen, Carl/NIelsen, Carl MWA CV 1221.docx",
+  "parsed_date": "2025-10-15T12:34:26.104966"
+}

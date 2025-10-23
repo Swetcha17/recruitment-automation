@@ -1,0 +1,87 @@
+{
+  "candidate_id": "Active_Associate_Tsui_Tat",
+  "name": "Tat Tsui",
+  "role_category": "Active Associate",
+  "titles": [
+    "Principal Consultant",
+    "Associate Director",
+    "Founded the Device Engineer",
+    "Process Engineer",
+    "MS in Management Science and Engineer"
+  ],
+  "skills": [
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso 13485",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "design control",
+      "level": "mentioned"
+    },
+    {
+      "name": "risk management",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "six sigma",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 17,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Tat Tsui +1 510 717 9884 tat.tsui@triangleconsultinginc.com  SUMMARY  Tat is a highly motivated individual with proven ability to leverage strong technical skills and leadership capabilities across the product lifecycle for drug delivery devices and drug-device combination products into significant contributions to the development of superior products for patients.  He supported 20+ combination product projects to date including autoinjectors and pen injectors.  OVERVIEW OF QUALIFICATIONS  Certi",
+  "email": "tat.tsui@triangleconsultinginc.com",
+  "phone": "510 717 9884",
+  "full_text_length": 9670,
+  "source_file": "Active Associates/Tsui, Tat/Tsui, Tat raw CV 0424.docx",
+  "parsed_date": "2025-10-15T12:34:26.878920"
+}

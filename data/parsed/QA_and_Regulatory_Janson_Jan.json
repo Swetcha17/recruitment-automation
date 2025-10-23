@@ -1,0 +1,87 @@
+{
+  "candidate_id": "QA_and_Regulatory_Janson_Jan",
+  "name": "Jan Janson",
+  "role_category": "QA & Regulatory",
+  "titles": [
+    "Equipment Engineer",
+    "Operations Manager",
+    "Senior Manufacturing Engineer",
+    "Quality Manager",
+    "Project Manager"
+  ],
+  "skills": [
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "qa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso 13485",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "risk management",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality systems",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "project management",
+      "level": "mentioned"
+    },
+    {
+      "name": "lean",
+      "level": "mentioned"
+    },
+    {
+      "name": "six sigma",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 1,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Jan Janson  SKILLS/SPECIAL QUALIFICATIONS:   Seeking employment as a Quality Consultant where my skills and talents in the field of QMS development, Quality and Supplier Management can conduct internal & supplier audits, product quality initiatives, develop and support CAPA and complaint analysis, gap assessment, change control, risk management and develop quality systems and policies and providing necessary training. Have experience in the Field of ISO 13495 and ISO 9000 quality systems impleme",
+  "email": null,
+  "phone": null,
+  "full_text_length": 7732,
+  "source_file": "AVS CV's/QA & Regulatory/Janson, Jan/Janson, Jan CV 0121.doc.docx",
+  "parsed_date": "2025-10-15T12:34:23.484589"
+}

@@ -1,0 +1,69 @@
+{
+  "candidate_id": "CAND_20251022205140610294",
+  "name": "KC, Saphal",
+  "role_category": "Validation",
+  "titles": [
+    "Validation"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "analytical",
+      "confidence": 0.9
+    },
+    {
+      "name": "project management",
+      "confidence": 0.7
+    }
+  ],
+  "experience_years": 9,
+  "education": [
+    {
+      "degree": "ms",
+      "field": "compliant with FDA requirements"
+    },
+    {
+      "degree": "MS",
+      "field": "Office"
+    },
+    {
+      "degree": "ms",
+      "field": "for Clean Classified Areas"
+    },
+    {
+      "degree": "ms",
+      "field": "in accordance with current data integrity and cGMP best practice expectations"
+    },
+    {
+      "degree": "ms",
+      "field": "including but not limited to product validation"
+    },
+    {
+      "degree": "ms",
+      "field": "in GMP Impact Assessments"
+    },
+    {
+      "degree": "master",
+      "field": "plan"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": " Change control activities, SO"
+  },
+  "email": null,
+  "phone": null,
+  "location": " Change control activities, SO",
+  "work_authorization": null,
+  "availability": null,
+  "resume_snippet": "SUMMARY: Extensive experience working as a Validation/Quality Engineer in FDA regulated Medical Device, Bio Pharmaceutical, and Cosmetics with concentration in Process Validation, Equipment Validation,Cleaning Validation, and Materials Validation. Experience with commissioning, qualification and other validation activities in FDA regulated environment and research laboratories. Good understanding of GxP and GAMP standards under the compliance of 21CFR Part 11, 58, 210, 211, 312, 314, 820. Experi",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/Validation/KC, Saphal/KC, Saphal AVS CV 061325.docx",
+  "parsed_date": "2025-10-22T20:51:40.610300",
+  "status": "New",
+  "stage": "Uploaded"
+}

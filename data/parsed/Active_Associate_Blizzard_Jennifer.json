@@ -1,0 +1,91 @@
+{
+  "candidate_id": "Active_Associate_Blizzard_Jennifer",
+  "name": "Jennifer Blizzard",
+  "role_category": "Active Associate",
+  "titles": [
+    "Tech Transfer Lead",
+    "Offline Manufacturing Review Lead",
+    "Assist in the coordination of Process Engineer",
+    "Global Compliance Consultant",
+    "Software Request Lead"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "automation",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "qa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "21 cfr part 11",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "project management",
+      "level": "mentioned"
+    },
+    {
+      "name": "lean",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    },
+    {
+      "name": "rest",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 0,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Jennifer Blizzard  PROFESSIONAL SUMMARY:\t  Over the past 20+ years, Ms. Blizzard has worked on a variety of projects at numerous pharmaceutical manufacturing sites. Her experience provides a diverse perspective that spans across multiple departments including scheduling/planning, automation, engineering, and quality which align with industry health and safety regulations as well as corporate guidelines.  SKILLS:  Project scheduling (Smartsheet, Microsoft Project) Commissioning and Qualification",
+  "email": null,
+  "phone": null,
+  "full_text_length": 16404,
+  "source_file": "Active Associates/Blizzard, Jennifer/Blizzard, Jennifer AVS CV 071125.docx",
+  "parsed_date": "2025-10-15T12:34:24.781249"
+}

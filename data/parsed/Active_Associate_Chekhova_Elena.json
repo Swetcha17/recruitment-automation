@@ -1,0 +1,83 @@
+{
+  "candidate_id": "Active_Associate_Chekhova_Elena",
+  "name": "INDEPENDENT CONTRACTOR AGREEMENT",
+  "role_category": "Active Associate",
+  "titles": [
+    "Title"
+  ],
+  "skills": [
+    {
+      "name": "react",
+      "level": "mentioned"
+    },
+    {
+      "name": "express",
+      "level": "mentioned"
+    },
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "aws",
+      "level": "mentioned"
+    },
+    {
+      "name": "ml",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "automation",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "git",
+      "level": "mentioned"
+    },
+    {
+      "name": "rest",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 0,
+  "location": "Newton, MA",
+  "work_authorization": "EAD",
+  "resume_snippet": "INDEPENDENT CONTRACTOR AGREEMENT  THIS AGREEMENT (\u201cAgreement\u201d) is effective as of November 12, 2024 and sets forth the terms and conditions whereby ELENA CHEKHOVA/BIOTINE CONSULTING, LLC (\u201cCONTRACTOR\u201d), with a business address of 454 Walnut Street, Newton, MA 02460, agrees to provide consulting services (\u201cSERVICES\u201d) as an Independent Contractor to Clients of Automation & Validation Solutions, LLC, dba AVS Life Sciences (\u201cAVS\u201d), with offices located at 152 East High Street, Suite 100, Pottstown,",
+  "email": null,
+  "phone": null,
+  "full_text_length": 38504,
+  "source_file": "Active Associates/Chekhova, Elena/Chekhova, Elena ICA 1124.docx",
+  "parsed_date": "2025-10-15T12:34:24.927116"
+}

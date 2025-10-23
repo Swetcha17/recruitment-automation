@@ -1,0 +1,113 @@
+{
+  "candidate_id": "CAND_20251022205141317960",
+  "name": "Nguyen, George",
+  "role_category": "Validation",
+  "titles": [
+    "Validation"
+  ],
+  "skills": [
+    {
+      "name": "python",
+      "confidence": 0.9
+    },
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "react",
+      "confidence": 0.7
+    },
+    {
+      "name": "sql",
+      "confidence": 0.7
+    },
+    {
+      "name": "machine learning",
+      "confidence": 0.7
+    },
+    {
+      "name": "data science",
+      "confidence": 0.9
+    },
+    {
+      "name": "jira",
+      "confidence": 0.7
+    },
+    {
+      "name": "scrum",
+      "confidence": 0.7
+    },
+    {
+      "name": "analytical",
+      "confidence": 0.9
+    },
+    {
+      "name": "project management",
+      "confidence": 0.9
+    }
+  ],
+  "experience_years": 25,
+  "education": [
+    {
+      "degree": "B.S.",
+      "field": "PROFESSIONAL SUMMARY"
+    },
+    {
+      "degree": "Bachelor",
+      "field": "Science"
+    },
+    {
+      "degree": "Master",
+      "field": "Control\nVeeva QMS\nBMS"
+    },
+    {
+      "degree": "MS",
+      "field": "UNIX\nHTML\nCloud Based Storage Systems\nAsana"
+    },
+    {
+      "degree": "ms",
+      "field": "Data Integrity Assessments\nPart"
+    },
+    {
+      "degree": "ma",
+      "field": "Vial Labeler\nPerformed Validation for Modified Facility PCA gas system"
+    },
+    {
+      "degree": "ms",
+      "field": "Drafted execution protocols for Getinge Autoclave and performed thermal mapping"
+    },
+    {
+      "degree": "ms",
+      "field": "and Pure Steam Generator"
+    },
+    {
+      "degree": "ms",
+      "field": "Reviewed protocols for the Condensate Recovery System\n\n\n\n\nGilead"
+    },
+    {
+      "degree": "ms",
+      "field": "and Pure Steam Generator"
+    },
+    {
+      "degree": "ms",
+      "field": "Reviewed protocols for the Condensate Recovery System\n\nAmgen"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": " Maintenance Validation Requalification, CS"
+  },
+  "email": null,
+  "phone": null,
+  "location": " Maintenance Validation Requalification, CS",
+  "work_authorization": null,
+  "availability": null,
+  "resume_snippet": "SUMMARY: A Quality Validation position that will utilize my biotechnology/pharmaceutical/medical device experience in (Equipment, Process, Data Integrity, Maintenance Validation Requalification, CSV and CSA). SKILLS: 21 CFR Parts 11, 210, 211, 820, ISO 13485, ISO 14971 ICH Q7A FDA 2022 CSA Guidelines, USP <1058> PDA Technical Report No.1 PharmaNet: Certificate Batch Record Review and Investigation FDA, (CSA) for Production and Quality System Software Draft Guidance GMP Compliance Auditing ASME c",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/Validation/Nguyen, George/Nguyen, George AVS CV 081325.docx",
+  "parsed_date": "2025-10-22T20:51:41.317982",
+  "status": "New",
+  "stage": "Uploaded"
+}

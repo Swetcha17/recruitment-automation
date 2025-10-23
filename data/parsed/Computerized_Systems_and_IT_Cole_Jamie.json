@@ -1,0 +1,95 @@
+{
+  "candidate_id": "Computerized_Systems_and_IT_Cole_Jamie",
+  "name": "Jamie Cole, B.S.",
+  "role_category": "Computerized Systems & IT",
+  "titles": [
+    "President and Lead Consultant",
+    "Senior Product Manager",
+    "Adjunct Lecturer\n\nKGCOE Biomedical Engineer",
+    "RIT Biomedical Engineer",
+    "TAU BETA PI \nNational Engineer"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "docker",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso 13485",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "design control",
+      "level": "mentioned"
+    },
+    {
+      "name": "risk management",
+      "level": "mentioned"
+    },
+    {
+      "name": "computer system validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "21 cfr part 11",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "agile",
+      "level": "mentioned"
+    },
+    {
+      "name": "jira",
+      "level": "mentioned"
+    },
+    {
+      "name": "lean",
+      "level": "mentioned"
+    },
+    {
+      "name": "windows",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 15,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Jamie Cole, B.S. PROFESSIONAL SUMMARY:\t  Jaimie Cole brings over 15 years of experience in IT infrastructure, including disaster recovery, telecom, data redundancy, and system security. She has deep expertise managing clinical and medical computer systems in FDA-regulated environments, with strong knowledge of FDA Part 11, Part 820, GxP, IEC 62304, and ISO standards. With 30+ years in software engineering, she is skilled in developing Windows applications and device drivers using tools like Vis",
+  "email": null,
+  "phone": null,
+  "full_text_length": 3092,
+  "source_file": "AVS CV's/Computerized Systems & IT/Cole, Jamie/Cole, Jamie AVS CV 052225.docx",
+  "parsed_date": "2025-10-15T12:34:22.235066"
+}

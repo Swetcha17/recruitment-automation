@@ -1,0 +1,83 @@
+{
+  "candidate_id": "QA_and_Regulatory_Ford_Ken",
+  "name": "Kenneth J. Ford, Ph.D. P.E.",
+  "role_category": "QA & Regulatory",
+  "titles": [
+    "Commercial Manufacturing\nLead",
+    "Independent Consultant",
+    "CMC Development Team Lead",
+    "Senior Principal Engineer",
+    "Commercial Tech Team Lead"
+  ],
+  "skills": [
+    {
+      "name": "ml",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "automation",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "project management",
+      "level": "mentioned"
+    },
+    {
+      "name": "lean",
+      "level": "mentioned"
+    },
+    {
+      "name": "git",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 0,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Kenneth J. Ford, Ph.D. P.E.  PROFESSIONAL SUMMARY:  A seasoned CMC strategic, operational and business expert with 25 years of professional experience in product development, process scale-up, manufacture and global regulations with a proven record of product approvals and launches including Xiidra\u00ae, Gardasil\u00ae, RotaTeq\u00ae, Invanz\u00ae and Juvisync\u00ae.  Throughout my career I have used a combination of technical, project management and interpersonal skills to build and lead high-performance organization",
+  "email": null,
+  "phone": null,
+  "full_text_length": 8349,
+  "source_file": "AVS CV's/QA & Regulatory/Ford, Ken/Ford, Ken MWA CV 0322.docx",
+  "parsed_date": "2025-10-15T12:34:23.356925"
+}

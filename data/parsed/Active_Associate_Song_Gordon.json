@@ -1,0 +1,91 @@
+{
+  "candidate_id": "Active_Associate_Song_Gordon",
+  "name": "gordon Song",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant",
+    "Deputy Director",
+    "Project Manager",
+    "GMP  Consultant\nManager",
+    "GMP  Consultant"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "gcp",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "csv",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "project management",
+      "level": "mentioned"
+    },
+    {
+      "name": "lean",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    },
+    {
+      "name": "rest",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 19,
+  "location": "remote",
+  "work_authorization": "EAD",
+  "resume_snippet": "gordon Song  PROFESSIONAL SUMMARY: Over 19 years experience in pharmaceutical industry, and over 10 years in validation & GMP consulting.  CORE COMPETENCIES: Computer Systems and Software Knowledgeable Have validation management experience, familiar with C&Q process and commutation skill with customers;  QMS consultant projects experience; PDA member, published several technical articles related to C&Q, sterilize product environment control, and quality management related. ISO 9001, GMP & EU reg",
+  "email": null,
+  "phone": null,
+  "full_text_length": 5618,
+  "source_file": "Active Associates/Song, Gordon/Song, Gordon MWA CV 0323.docx",
+  "parsed_date": "2025-10-15T12:34:26.766497"
+}

@@ -1,0 +1,57 @@
+{
+  "candidate_id": "CAND_20251022205130785026",
+  "name": "Jordan, Kelsey",
+  "role_category": "Medical Device",
+  "titles": [
+    "Medical Device"
+  ],
+  "skills": [
+    {
+      "name": "leadership",
+      "confidence": 0.7
+    },
+    {
+      "name": "communication",
+      "confidence": 0.7
+    },
+    {
+      "name": "analytical",
+      "confidence": 0.9
+    }
+  ],
+  "experience_years": 6,
+  "education": [
+    {
+      "degree": "Bachelor",
+      "field": "Science in Engineering"
+    },
+    {
+      "degree": "MS",
+      "field": "Office"
+    },
+    {
+      "degree": "master",
+      "field": "records of device information"
+    },
+    {
+      "degree": "Master",
+      "field": "Science in Engineering"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": "\nKelsey Jordan, MS"
+  },
+  "email": null,
+  "phone": null,
+  "location": "\nKelsey Jordan, MS",
+  "work_authorization": null,
+  "availability": null,
+  "resume_snippet": "SUMMARY: Focused and dedicated scientist with over five years of professional experience in the pharmaceutical industry, with excellent interpersonal communication, leadership, teamwork skills, and the ability to work cross functionally to advance projects in medical device development and biomedical research. CORE COMPETENCIES: MS Office: Microsoft Office Suite, Word, Excel Spreadsheet, and PowerPoint. Lab Testing: General Appearance, Sub-visible Particulate Analysis, pH, Protein Concentration,",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/Medical Device/Jordan, Kelsey/Jordan, Kelsey AVS CV 050725.docx",
+  "parsed_date": "2025-10-22T20:51:30.785033",
+  "status": "New",
+  "stage": "Uploaded"
+}

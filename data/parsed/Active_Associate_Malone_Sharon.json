@@ -1,0 +1,69 @@
+{
+  "candidate_id": "Active_Associate_Malone_Sharon",
+  "name": "Sharon Malone",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant",
+    "Clinical Quality Assurance Lead",
+    "Project Manager"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "gcp",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "qa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 1,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Sharon Malone  PROFESSIONAL SUMMARY:  For the past twenty-six years, work experience has been in environmental chemistry as supervisor of sample receiving departments, HPLC, GC, AA and IC chemist, project manager assistant, quality control coordinator and presently clinical quality assurance lead of personal care and cosmetic clinical studies.  CORE COMPETENCIES:  Clinical Quality Assurance Quality Control GxP Training Internal Audits GCP SOP Development  CONSULTING AND WORK EXPERIENCE:   MWA Co",
+  "email": null,
+  "phone": null,
+  "full_text_length": 3114,
+  "source_file": "Active Associates/Malone, Sharon/Malone Sharon MWA CV 0621.docx",
+  "parsed_date": "2025-10-15T12:34:25.736630"
+}

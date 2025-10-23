@@ -1,0 +1,63 @@
+{
+  "candidate_id": "Active_Associate_Mundszinger_Olaf",
+  "name": "OLAF MUNDSZINGER, Ph.D.",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant"
+  ],
+  "skills": [
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "qa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "lean",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 1,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "OLAF MUNDSZINGER, Ph.D.  Independent Consultant, Germany\tMarch 2019-Present (since February 2021 registered as A & O Pharma GmbH) Qualified Person Technical release and market batch release of pharmaceutical products and clinical trial products Interim management for quality assurance, quality control and manufacturing Service provider for quality assurance and quality control Implementation and maintenance of a Pharmaceutical Quality Management System (PQMS) GMP Consulting Process transfer and",
+  "email": null,
+  "phone": null,
+  "full_text_length": 4228,
+  "source_file": "Active Associates/Mundszinger, Olaf/Mundszinger Olaf AVS CV 0722.docx",
+  "parsed_date": "2025-10-15T12:34:25.916259"
+}

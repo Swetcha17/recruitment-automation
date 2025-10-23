@@ -1,0 +1,71 @@
+{
+  "candidate_id": "Active_Associate_Macknet_David",
+  "name": "David T. Macknet, Ph.D.",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant",
+    "Principal Architect",
+    "Associate Director",
+    "Senior Softare Architect",
+    "Application Development Team Lead"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "oracle",
+      "level": "mentioned"
+    },
+    {
+      "name": "automation",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "agile",
+      "level": "mentioned"
+    },
+    {
+      "name": "rest",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 1,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "David T. Macknet, Ph.D.  PROFESSIONAL SUMMARY: I provide extensive application development, automation, and process engineering experience within the biotech, finance, healthcare, vessel management and logistics, and high-tech manufacturing industries. I have designed complex integrations between a variety of systems, including MES, DCS, ERP, document control systems, change management databases, etc.  I have led development teams, offshore project teams, contract, and FTE developers.  I have ma",
+  "email": null,
+  "phone": null,
+  "full_text_length": 4503,
+  "source_file": "Active Associates/Macknet, David/Macknet, David MWA CV 1221.docx",
+  "parsed_date": "2025-10-15T12:34:25.717161"
+}

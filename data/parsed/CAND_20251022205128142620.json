@@ -1,0 +1,125 @@
+{
+  "candidate_id": "CAND_20251022205128142620",
+  "name": "Agnew, Jonathan",
+  "role_category": "Medical Device",
+  "titles": [
+    "Medical Device"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "rust",
+      "confidence": 0.7
+    },
+    {
+      "name": "react",
+      "confidence": 0.9
+    },
+    {
+      "name": "spring",
+      "confidence": 0.7
+    },
+    {
+      "name": "gcp",
+      "confidence": 0.7
+    },
+    {
+      "name": "communication",
+      "confidence": 0.7
+    },
+    {
+      "name": "analytical",
+      "confidence": 0.9
+    }
+  ],
+  "experience_years": 4,
+  "education": [
+    {
+      "degree": "ms",
+      "field": "CRO  Contract Research Organization  \nCSR  Clinical Study Report  \nEDC  Electronic Data Capture  \nFDA Food and Drug Administration  \nGCP  Good Clinical Pract ice \nHPLC  High"
+    },
+    {
+      "degree": "ms",
+      "field": "to ensure \nclarity"
+    },
+    {
+      "degree": "ms",
+      "field": "were systematically stored in individual \nparticipant study files"
+    },
+    {
+      "degree": "M.D.",
+      "field": "Dr"
+    },
+    {
+      "degree": "ms",
+      "field": "rather than the underlying \ndisease mechanisms"
+    },
+    {
+      "degree": "ms",
+      "field": "both efficacy \nand safety"
+    },
+    {
+      "degree": "ms",
+      "field": "in patients using the Neuropsychiatric \nInventory"
+    },
+    {
+      "degree": "ms",
+      "field": "Alzheimer"
+    },
+    {
+      "degree": "ms",
+      "field": "post"
+    },
+    {
+      "degree": "ma",
+      "field": "and improvement in MMSE and ADAS \nscores"
+    },
+    {
+      "degree": "ma",
+      "field": "was occasionally assessed to further ensure compliance"
+    },
+    {
+      "degree": "ma",
+      "field": "concentrations of NeuroZel typically \ndemonstrated better cognitive test scores"
+    },
+    {
+      "degree": "ms",
+      "field": "A D"
+    },
+    {
+      "degree": "Ph.D.",
+      "field": "Report Vers ion Number"
+    },
+    {
+      "degree": "Ph.D.",
+      "field": "Brain and Neurological Research Center"
+    },
+    {
+      "degree": "Ph.D.",
+      "field": "Dr"
+    },
+    {
+      "degree": "Ph.D.",
+      "field": "Dr"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": " Boston, MA 02110"
+  },
+  "email": null,
+  "phone": null,
+  "location": " Boston, MA 02110",
+  "work_authorization": null,
+  "availability": null,
+  "resume_snippet": "Summary and Co nclusions: Efficacy Results : Primary End point(s): Significant improvement in ADAS -Cog scores in the NeuroZel group compared to placebo. Secondary End points(s) : Improved quality of life as evidenced by higher ADCS -ADL scores in the NeuroZel group compared to placebo. Exploratory Endpo int(s): Decreased caregiver burden in the NeuroZel group as reported through caregiver surveys. CCR 00-0001 CSR Version 1.0 Date 17-Aug-2023 Page 6 of 37 Safety Results: NeuroZel was well -toler",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/Medical Device/Agnew, Jonathan/Sample Clinical Study Report.pdf",
+  "parsed_date": "2025-10-22T20:51:28.142635",
+  "status": "New",
+  "stage": "Uploaded"
+}

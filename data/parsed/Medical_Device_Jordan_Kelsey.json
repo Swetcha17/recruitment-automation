@@ -1,0 +1,46 @@
+{
+  "candidate_id": "Medical_Device_Jordan_Kelsey",
+  "name": "Kelsey Jordan, MSE, BSE",
+  "role_category": "Medical Device",
+  "titles": [
+    "Associate Scientist\n\nDrug Product Workstream Lead",
+    "Complaint Analyst",
+    "Master of Science in Engineer",
+    "Bachelor of Science in Engineer"
+  ],
+  "skills": [
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 0,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Kelsey Jordan, MSE, BSE  PROFESSIONAL SUMMARY:\t  Focused and dedicated scientist with over five years of professional experience in the pharmaceutical industry, with excellent interpersonal communication, leadership, teamwork skills, and the ability to work cross functionally to advance projects in medical device development and biomedical research.    CORE COMPETENCIES:  MS Office: Microsoft Office Suite, Word, Excel Spreadsheet, and PowerPoint. Lab Testing: General Appearance, Sub-visible Par",
+  "email": null,
+  "phone": null,
+  "full_text_length": 3296,
+  "source_file": "AVS CV's/Medical Device/Jordan, Kelsey/Jordan, Kelsey AVS CV 050725.docx",
+  "parsed_date": "2025-10-15T12:34:22.475954"
+}

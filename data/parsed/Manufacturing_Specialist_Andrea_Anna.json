@@ -1,0 +1,69 @@
+{
+  "candidate_id": "Manufacturing_Specialist_Andrea_Anna",
+  "name": "Anna Andrea",
+  "role_category": "Manufacturing Specialist",
+  "titles": [
+    "Business Systems Analyst",
+    "Independent Consultant",
+    "Certified Business Analyst"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "automation",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "computer system validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "lean",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 1,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Anna Andrea  PROFESSIONAL SUMMARY: Business Systems Analyst with 18 years\u2019 experience in a GMP environment with roles in Business Systems, Leadership, Start-Up and Production. Extensive experience supporting data management and functionality for business systems including MES, BAHR, ERP, and ESB. Interact effectively with cross-functional groups possessing varying levels of system knowledge and foster effective interdepartmental and cross-functional partnerships. Possess analytical skills to und",
+  "email": null,
+  "phone": null,
+  "full_text_length": 4873,
+  "source_file": "AVS CV's/Manufacturing Specialist/Andrea Anna/Andrea Anna MWA CV 1021.docx",
+  "parsed_date": "2025-10-15T12:34:22.347880"
+}

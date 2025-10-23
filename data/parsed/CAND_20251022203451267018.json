@@ -1,0 +1,67 @@
+{
+  "candidate_id": "CAND_20251022203451267018",
+  "name": "Kientz, Corey",
+  "role_category": "QA & Regulatory",
+  "titles": [
+    "QA & Regulatory"
+  ],
+  "skills": [
+    {
+      "name": "python",
+      "confidence": 0.7
+    },
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "flask",
+      "confidence": 0.7
+    },
+    {
+      "name": "analytical",
+      "confidence": 0.9
+    }
+  ],
+  "experience_years": 7,
+  "education": [
+    {
+      "degree": "B.S.",
+      "field": "SKILLS"
+    },
+    {
+      "degree": "bs",
+      "field": "to complete tech transfer"
+    },
+    {
+      "degree": "Bachelor",
+      "field": "Science"
+    },
+    {
+      "degree": "ma",
+      "field": "detection"
+    },
+    {
+      "degree": "ms",
+      "field": "to automate QC critical reagent inventory management via Tableau and SAP"
+    },
+    {
+      "degree": "Master",
+      "field": "Science"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": " cGMP, GL"
+  },
+  "email": null,
+  "phone": null,
+  "location": " cGMP, GL",
+  "work_authorization": null,
+  "resume_snippet": "Corey Kientz, M.S., B.S. SKILLS: Technical \u2022 Autologous & Allogeneic cell therapy manufacturing \u2022 cGMP, GLP, and GDP \u2022 21 CFR Compliance \u2022 FDA, EMA, & ICH guidelines \u2022 Deviations \u2022 Investigations \u2022 Root Cause Analysis \u2022 Quality management systems \u2022 CAPAs and Change Controls \u2022 Impact Assessments \u2022 Quality auditing \u2022 Tech transfer \u2022 Data review \u2022 SOP writing \u2022 Protocol and report writing Assays & Instrumentation \u2022 Flow cytometry \u2022 ELISA \u2022 MSD \u2022 qPCR \u2022 Mycoplasma detection \u2022 Cell counting and viabi",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/QA & Regulatory/Kientz, Corey/Kientz, Corey AVS CV 080625.docx",
+  "parsed_date": "2025-10-22T20:34:51.267024",
+  "status": "New"
+}

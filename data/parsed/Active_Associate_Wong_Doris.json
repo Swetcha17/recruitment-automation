@@ -1,0 +1,79 @@
+{
+  "candidate_id": "Active_Associate_Wong_Doris",
+  "name": "Doris Wong",
+  "role_category": "Active Associate",
+  "titles": [
+    "Independent Consultant"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "qa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality systems",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "api",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 1,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Doris Wong  PROFESSIONAL SUMMARY: Experienced Quality Assurance, Compliance, and Validation professional with a background in pharmaceutical, biotechnology, medical device, and nutritional and dietary supplement industries  CORE COMPETENCIES: Developed, implemented, and managed quality systems and compliance programs  Regulatory experience with the following regulations, guidelines and documents: 21 CFR Parts 7, 11, 210, 211, 312,  314, 600, 610, 820; Commission Directive 2004/10/EC, Commission",
+  "email": null,
+  "phone": null,
+  "full_text_length": 6955,
+  "source_file": "Active Associates/Wong, Doris/Wong, Doris MWA CV 0821.docx",
+  "parsed_date": "2025-10-15T12:34:26.985402"
+}

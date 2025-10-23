@@ -1,0 +1,83 @@
+{
+  "candidate_id": "CAND_20251022203446891208",
+  "name": "Wakim, Mina",
+  "role_category": "Project Management",
+  "titles": [
+    "Project Management"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "confidence": 0.7
+    },
+    {
+      "name": "react",
+      "confidence": 0.7
+    },
+    {
+      "name": "leadership",
+      "confidence": 0.7
+    },
+    {
+      "name": "communication",
+      "confidence": 0.7
+    },
+    {
+      "name": "problem solving",
+      "confidence": 0.9
+    },
+    {
+      "name": "analytical",
+      "confidence": 0.9
+    },
+    {
+      "name": "project management",
+      "confidence": 0.7
+    }
+  ],
+  "experience_years": 13,
+  "education": [
+    {
+      "degree": "B.S.",
+      "field": "PROFESSIONAL SUMMARY"
+    },
+    {
+      "degree": "ma",
+      "field": "Green Belt\nValidation"
+    },
+    {
+      "degree": "ma",
+      "field": "Solutions Philadelphia PA"
+    },
+    {
+      "degree": "master",
+      "field": "data"
+    },
+    {
+      "degree": "ms",
+      "field": "Assist with dip coater equipment to resolve problems"
+    },
+    {
+      "degree": "ms",
+      "field": "for optimizing production resources and increasing efficiency\nDesigned excel spreadsheets and standardized forms for use by all departments\nOrganized and led meetings with project managers and formulators to perform a technical risk assessment and create a development strategy for incorporating future projects"
+    },
+    {
+      "degree": "ma",
+      "field": "certified\nProficient in Microsoft office"
+    }
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "linkedin": null,
+    "location": " Adept in GMP, IS"
+  },
+  "email": null,
+  "phone": null,
+  "location": " Adept in GMP, IS",
+  "work_authorization": null,
+  "resume_snippet": "SUMMARY: Results-driven and technically creative Principal Process Engineer with 15+ years of experience leading product and process innovation across the pharmaceutical, medical device, chemical, and manufacturing sectors. Adept in GMP, ISO, and design control environments, with proven success in process optimization, scale-up manufacturing, and cross-functional project leadership. Holds both Bachelor\u2019s and Master\u2019s degrees in Chemical and Biological Engineering from NYU Polytechnic. Recognized",
+  "source_file": "/Users/swetchareddy/Desktop/Recruiting/OneDrive_1_9-22-2025/AVS CV's/Project Management/Wakim, Mina/Wakim, Mina AVS CV 080525.docx",
+  "parsed_date": "2025-10-22T20:34:46.891218",
+  "status": "New"
+}

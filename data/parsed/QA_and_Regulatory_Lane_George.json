@@ -1,0 +1,97 @@
+{
+  "candidate_id": "QA_and_Regulatory_Lane_George",
+  "name": "George Lane, B.S",
+  "role_category": "QA & Regulatory",
+  "titles": [
+    "Senior Quality Assurance Manager",
+    "Quality Engineer",
+    "System Lead"
+  ],
+  "skills": [
+    {
+      "name": "react",
+      "level": "mentioned"
+    },
+    {
+      "name": "vue",
+      "level": "mentioned"
+    },
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "gcp",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "qa",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality assurance",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso 13485",
+      "level": "mentioned"
+    },
+    {
+      "name": "iso",
+      "level": "mentioned"
+    },
+    {
+      "name": "design control",
+      "level": "mentioned"
+    },
+    {
+      "name": "risk management",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality systems",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 1,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "George Lane, B.S PROFESSIONAL SUMMARY:\t  Accomplished expert in medical device Quality Management Systems and international Regulatory Affairs.  Extensive background encompassing medical device quality assurance and regulatory, medical device  design and development, drug and device combination products, engineering operations and maintenance, and supervision of large and small organizations. Led quality and regulatory for start-ups in initial clinical studies and large established organization",
+  "email": null,
+  "phone": null,
+  "full_text_length": 5527,
+  "source_file": "AVS CV's/QA & Regulatory/Lane, George/Lane, George AVS CV 0512.docx",
+  "parsed_date": "2025-10-15T12:34:23.675182"
+}

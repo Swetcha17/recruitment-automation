@@ -1,0 +1,89 @@
+{
+  "candidate_id": "Computerized_Systems_and_IT_Mead_Terri",
+  "name": "Terri Mead",
+  "role_category": "Computerized Systems & IT",
+  "titles": [
+    "Independent Consultant",
+    "Associate Director",
+    "Business Analyst"
+  ],
+  "skills": [
+    {
+      "name": "go",
+      "level": "mentioned"
+    },
+    {
+      "name": "gcp",
+      "level": "mentioned"
+    },
+    {
+      "name": "ai",
+      "level": "mentioned"
+    },
+    {
+      "name": "testing",
+      "level": "mentioned"
+    },
+    {
+      "name": "validation",
+      "level": "mentioned"
+    },
+    {
+      "name": "regulatory",
+      "level": "mentioned"
+    },
+    {
+      "name": "medical device",
+      "level": "mentioned"
+    },
+    {
+      "name": "gmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "fda",
+      "level": "mentioned"
+    },
+    {
+      "name": "capa",
+      "level": "mentioned"
+    },
+    {
+      "name": "csv",
+      "level": "mentioned"
+    },
+    {
+      "name": "quality systems",
+      "level": "mentioned"
+    },
+    {
+      "name": "audit",
+      "level": "mentioned"
+    },
+    {
+      "name": "compliance",
+      "level": "mentioned"
+    },
+    {
+      "name": "project management",
+      "level": "mentioned"
+    },
+    {
+      "name": "pmp",
+      "level": "mentioned"
+    },
+    {
+      "name": "git",
+      "level": "mentioned"
+    }
+  ],
+  "experience_years": 1,
+  "location": null,
+  "work_authorization": "EAD",
+  "resume_snippet": "Terri Mead  SKILLS/SPECIAL QUALIFICATIONS:   Over twenty years\u2019 experience working in and with biotech, pharmaceutical, medical device, diagnostic, and digital health companies on IT strategy, IT compliance (SOX, FDA, GDPR), IT project management, IT system selection, and computer validation.  Worked with over twenty-five companies on over fifty system related and compliance projects in life sciences.   Experience performing IT quality audits for CROs, Software as a Service (SaaS), externally ho",
+  "email": null,
+  "phone": null,
+  "full_text_length": 6111,
+  "source_file": "AVS CV's/Computerized Systems & IT/Mead, Terri/Mead, Terri MWA CV 021720.docx",
+  "parsed_date": "2025-10-15T12:34:22.299291"
+}
