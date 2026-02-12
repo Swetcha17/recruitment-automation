@@ -1,12 +1,9 @@
-"""
-Vacancy Management Module
-Auto-create vacancies from folder structure, track status, assign candidates
-"""
 import json
 from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
 
+# --- Configuration ---
 PARSED_DIR = Path("data/parsed")
 VACANCY_DIR = Path("data/vacancies")
 VACANCY_DIR.mkdir(parents=True, exist_ok=True)
@@ -18,258 +15,134 @@ class VacancyManager:
         self.load_vacancies()
     
     def load_vacancies(self):
-        """Load existing vacancies"""
+        """Loads all existing vacancy JSON files."""
         for json_file in self.vacancy_dir.glob("*.json"):
-            with open(json_file, 'r') as f:
-                vacancy = json.load(f)
-                self.vacancies[vacancy['vacancy_id']] = vacancy
+            try:
+                with open(json_file, 'r') as f:
+                    vacancy = json.load(f)
+                    self.vacancies[vacancy['vacancy_id']] = vacancy
+            except Exception as e:
+                print(f"Error loading vacancy {json_file}: {e}")
     
     def save_vacancy(self, vacancy):
-        """Save a vacancy to file"""
+        """Saves a single vacancy to disk."""
         vacancy_file = self.vacancy_dir / f"{vacancy['vacancy_id']}.json"
         with open(vacancy_file, 'w') as f:
             json.dump(vacancy, f, indent=2)
         self.vacancies[vacancy['vacancy_id']] = vacancy
     
     def create_vacancy_from_role(self, role_name):
-        """Create a vacancy from a role category"""
-        # Check if vacancy already exists
+        """Creates a new vacancy based on a role category."""
+        # Check if an open vacancy already exists for this role
         for vac in self.vacancies.values():
             if vac['role_name'] == role_name and vac['status'] == 'Open':
                 return vac
         
-        # Generate vacancy ID
+        # Generate ID
         timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
-        vacancy_id = f"VAC_{role_name.replace(' ', '_')}_{timestamp}"
+        # Sanitize filename
+        safe_role = role_name.replace(' ', '_').replace('/', '-').upper()
+        vacancy_id = f"VAC_{safe_role}_{timestamp}"
         
         vacancy = {
             'vacancy_id': vacancy_id,
             'role_name': role_name,
-            'status': 'Open',  # Open, On Hold, Closed, Filled
+            'status': 'Open',  # Options: Open, On Hold, Closed, Filled
             'created_date': datetime.now().isoformat(),
             'assigned_candidates': [],
             'requirements': {
+                'min_experience': 2, # Default baseline
                 'required_skills': [],
-                'preferred_skills': [],
-                'min_experience': 0,
-                'education': [],
-                'work_authorization': None,
-                'location': None
+                'work_authorization': None
             },
-            'hiring_manager': None,
-            'department': None,
-            'priority': 'Medium',  # Low, Medium, High, Urgent
-            'target_hire_date': None,
+            'priority': 'Medium',
             'notes': []
         }
         
         self.save_vacancy(vacancy)
         return vacancy
     
-    def auto_create_vacancies_from_profiles(self):
-        """Auto-create vacancies from parsed profiles"""
-        print("\n🔄 Auto-creating vacancies from role categories...")
+    def auto_create_vacancies(self):
+        """Scans parsed profiles and creates vacancies for discovered roles."""
+        print("Auto-creating vacancies from candidate roles...")
         
-        role_categories = set()
-        
-        # Get all unique role categories
+        if not PARSED_DIR.exists():
+            print("No parsed data found. Run parse_resumes.py first.")
+            return
+
+        found_roles = set()
         for json_file in PARSED_DIR.glob("*.json"):
-            with open(json_file, 'r') as f:
-                profile = json.load(f)
-                role_cat = profile.get('role_category')
-                if role_cat:
-                    role_categories.add(role_cat)
+            try:
+                with open(json_file, 'r') as f:
+                    profile = json.load(f)
+                    if profile.get('role_category'):
+                        found_roles.add(profile['role_category'])
+            except:
+                continue
         
-        created_count = 0
-        for role in role_categories:
-            vacancy = self.create_vacancy_from_role(role)
-            if vacancy:
-                created_count += 1
-                print(f"   ✅ Created/Updated vacancy: {role}")
-        
-        print(f"\n✅ Total vacancies: {len(self.vacancies)}")
-        return created_count
-    
-    def assign_candidate_to_vacancy(self, vacancy_id, candidate_id):
-        """Assign a candidate to a vacancy"""
+        count = 0
+        for role in found_roles:
+            self.create_vacancy_from_role(role)
+            count += 1
+            
+        print(f"Processed {count} roles. Total active vacancies: {len(self.vacancies)}")
+
+    def assign_candidate(self, vacancy_id, candidate_id):
+        """Links a candidate to a specific vacancy."""
         if vacancy_id not in self.vacancies:
-            print(f"❌ Vacancy {vacancy_id} not found")
             return False
         
         vacancy = self.vacancies[vacancy_id]
-        
         if candidate_id not in vacancy['assigned_candidates']:
             vacancy['assigned_candidates'].append(candidate_id)
-            vacancy['last_updated'] = datetime.now().isoformat()
             self.save_vacancy(vacancy)
-            print(f"✅ Assigned candidate {candidate_id} to vacancy {vacancy_id}")
             return True
-        
         return False
-    
-    def update_vacancy_status(self, vacancy_id, status):
-        """Update vacancy status"""
-        valid_statuses = ['Open', 'On Hold', 'Closed', 'Filled']
-        
-        if status not in valid_statuses:
-            print(f"❌ Invalid status: {status}. Must be one of {valid_statuses}")
-            return False
-        
-        if vacancy_id not in self.vacancies:
-            print(f"❌ Vacancy {vacancy_id} not found")
-            return False
-        
-        vacancy = self.vacancies[vacancy_id]
-        vacancy['status'] = status
-        vacancy['last_updated'] = datetime.now().isoformat()
-        
-        if status == 'Filled':
-            vacancy['filled_date'] = datetime.now().isoformat()
-        
-        self.save_vacancy(vacancy)
-        print(f"✅ Updated vacancy {vacancy_id} status to {status}")
-        return True
-    
-    def update_vacancy_requirements(self, vacancy_id, requirements):
-        """Update vacancy requirements"""
-        if vacancy_id not in self.vacancies:
-            print(f"❌ Vacancy {vacancy_id} not found")
-            return False
-        
-        vacancy = self.vacancies[vacancy_id]
-        vacancy['requirements'].update(requirements)
-        vacancy['last_updated'] = datetime.now().isoformat()
-        
-        self.save_vacancy(vacancy)
-        print(f"✅ Updated requirements for vacancy {vacancy_id}")
-        return True
-    
-    def add_note_to_vacancy(self, vacancy_id, note):
-        """Add a note to a vacancy"""
-        if vacancy_id not in self.vacancies:
-            return False
-        
-        vacancy = self.vacancies[vacancy_id]
-        vacancy['notes'].append({
-            'text': note,
-            'timestamp': datetime.now().isoformat()
-        })
-        
-        self.save_vacancy(vacancy)
-        return True
-    
-    def get_vacancy(self, vacancy_id):
-        """Get a specific vacancy"""
-        return self.vacancies.get(vacancy_id)
-    
-    def get_vacancy_by_role(self, role_name):
-        """Get vacancy by role name"""
-        for vacancy in self.vacancies.values():
-            if vacancy['role_name'] == role_name:
-                return vacancy
-        return None
-    
-    def get_all_vacancies(self, status_filter=None):
-        """Get all vacancies, optionally filtered by status"""
-        if status_filter:
-            return [v for v in self.vacancies.values() if v['status'] == status_filter]
+
+    def get_all_vacancies(self):
         return list(self.vacancies.values())
-    
-    def get_vacancy_stats(self):
-        """Get statistics about vacancies"""
-        stats = {
-            'total': len(self.vacancies),
-            'by_status': defaultdict(int),
-            'by_priority': defaultdict(int),
-            'total_candidates': 0,
-            'avg_candidates_per_vacancy': 0
-        }
-        
-        for vacancy in self.vacancies.values():
-            stats['by_status'][vacancy['status']] += 1
-            stats['by_priority'][vacancy.get('priority', 'Medium')] += 1
-            stats['total_candidates'] += len(vacancy.get('assigned_candidates', []))
-        
-        if stats['total'] > 0:
-            stats['avg_candidates_per_vacancy'] = round(
-                stats['total_candidates'] / stats['total'], 1
-            )
-        
-        return stats
-    
-    def get_candidates_for_vacancy(self, vacancy_id):
-        """Get all candidates assigned to a vacancy"""
-        vacancy = self.get_vacancy(vacancy_id)
+
+    def match_candidates(self, vacancy_id, top_n=10):
+        """Simple scoring system to find best matches for a vacancy."""
+        vacancy = self.vacancies.get(vacancy_id)
         if not vacancy:
             return []
-        
+
         candidates = []
-        for candidate_id in vacancy.get('assigned_candidates', []):
-            # Load candidate profile
-            candidate_file = PARSED_DIR / f"{candidate_id}.json"
-            if candidate_file.exists():
-                with open(candidate_file, 'r') as f:
-                    candidates.append(json.load(f))
-        
-        return candidates
-    
-    def match_candidates_to_vacancy(self, vacancy_id, top_n=10):
-        """Find top matching candidates for a vacancy using requirements"""
-        vacancy = self.get_vacancy(vacancy_id)
-        if not vacancy:
-            return []
-        
-        requirements = vacancy['requirements']
-        required_skills = set(s.lower() for s in requirements.get('required_skills', []))
-        min_experience = requirements.get('min_experience', 0)
-        
-        # Score all candidates
-        scored_candidates = []
-        
+        # Scan all parsed profiles
         for json_file in PARSED_DIR.glob("*.json"):
-            with open(json_file, 'r') as f:
-                profile = json.load(f)
-            
-            # Skip if already assigned
-            if profile['candidate_id'] in vacancy.get('assigned_candidates', []):
+            try:
+                with open(json_file, 'r') as f:
+                    profile = json.load(f)
+                
+                # Simple Scoring Logic
+                score = 0
+                
+                # 1. Role Match (High Weight)
+                if profile.get('role_category') == vacancy['role_name']:
+                    score += 50
+                
+                # 2. Experience Match (Medium Weight)
+                req_exp = vacancy['requirements'].get('min_experience', 0)
+                cand_exp = profile.get('experience_years', 0)
+                if cand_exp >= req_exp:
+                    score += 20
+                
+                # 3. Text Match (Naive - Low Weight)
+                # In a real app, we would use the vector search here
+                
+                if score > 0:
+                    profile['match_score'] = score
+                    candidates.append(profile)
+            except:
                 continue
-            
-            score = 0
-            
-            # Match role category
-            if profile.get('role_category') == vacancy['role_name']:
-                score += 20
-            
-            # Match skills
-            candidate_skills = set(s['name'].lower() for s in profile.get('skills', []))
-            if required_skills:
-                skill_match = len(required_skills & candidate_skills) / len(required_skills)
-                score += skill_match * 40
-            
-            # Match experience
-            candidate_exp = profile.get('experience_years', 0)
-            if candidate_exp >= min_experience:
-                score += 20
-                # Bonus for more experience
-                score += min((candidate_exp - min_experience) * 2, 10)
-            
-            # Work authorization
-            if requirements.get('work_authorization'):
-                if profile.get('work_authorization') == requirements['work_authorization']:
-                    score += 10
-            
-            if score > 0:
-                profile['match_score'] = score
-                scored_candidates.append(profile)
         
-        # Sort by score
-        scored_candidates.sort(key=lambda x: x['match_score'], reverse=True)
-        
-        return scored_candidates[:top_n]
+        # Sort by highest score
+        candidates.sort(key=lambda x: x['match_score'], reverse=True)
+        return candidates[:top_n]
 
-# Singleton
+# Singleton Accessor for Streamlit
 _manager = None
-
 def get_vacancy_manager():
     global _manager
     if _manager is None:
@@ -277,21 +150,14 @@ def get_vacancy_manager():
     return _manager
 
 if __name__ == "__main__":
-    # Test vacancy management
-    manager = VacancyManager()
-    manager.auto_create_vacancies_from_profiles()
+    print("--- Initializing Vacancy Manager ---")
+    vm = VacancyManager()
     
-    stats = manager.get_vacancy_stats()
-    print("\n" + "="*60)
-    print("VACANCY STATISTICS")
-    print("="*60)
-    print(f"Total Vacancies: {stats['total']}")
-    print(f"\nBy Status:")
-    for status, count in stats['by_status'].items():
-        print(f"  {status}: {count}")
-    print(f"\nBy Priority:")
-    for priority, count in stats['by_priority'].items():
-        print(f"  {priority}: {count}")
-    print(f"\nTotal Candidates: {stats['total_candidates']}")
-    print(f"Avg Candidates/Vacancy: {stats['avg_candidates_per_vacancy']}")
-    print("="*60 + "\n")
+    # 1. Auto-create vacancies based on parsed resumes
+    vm.auto_create_vacancies()
+    
+    # 2. Print Summary
+    all_vacs = vm.get_all_vacancies()
+    print(f"\nTotal Vacancies Managed: {len(all_vacs)}")
+    for v in all_vacs:
+        print(f" - {v['role_name']} ({v['status']})")

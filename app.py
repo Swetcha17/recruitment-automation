@@ -1,506 +1,270 @@
 import streamlit as st
-from datetime import datetime
-from pathlib import Path
-from retrieval import get_retriever
+import subprocess
+import sys
 import re
 import json
 import requests
+from datetime import datetime
+from pathlib import Path
+from retrieval import get_retriever
 
-def ensure_data_exists():
-    parsed_dir = Path("data/parsed")
-    index_dir = Path("data/index")
-    
-    if not parsed_dir.exists() or not list(parsed_dir.glob("*.json")):
-        st.warning("No candidate data found. Please add resumes to data/resumes/ folder and run setup.")
-        st.info("For demo purposes, the system is ready but needs resume data to be added.")
-        st.stop()
-    
-    if not (index_dir / "faiss.index").exists():
-        with st.spinner("Building search indexes... (first time only)"):
-            try:
-                subprocess.run([sys.executable, "build_faiss.py"], check=True)
-                subprocess.run([sys.executable, "build_fts.py"], check=True)
-                st.success("Indexes built successfully!")
-                st.rerun()
-            except Exception as e:
-                st.error(f"Failed to build indexes: {e}")
-                st.stop()
-
-ensure_data_exists()
-
-def check_password():
-    def password_entered():
-        if st.session_state["password"] == "your-secret-password":
-            st.session_state["password_correct"] = True
-            del st.session_state["password"]
-        else:
-            st.session_state["password_correct"] = False
-
-    if "password_correct" not in st.session_state:
-        st.text_input("Password", type="password", on_change=password_entered, key="password")
-        return False
-    elif not st.session_state["password_correct"]:
-        st.text_input("Password", type="password", on_change=password_entered, key="password")
-        st.error("Incorrect password")
-        return False
-    else:
-        return True
-
-if not check_password():
-    st.stop()
-
+# --- Configuration & Setup ---
 st.set_page_config(
-    page_title="AVS Talent Search | AI-Powered",
-    page_icon="",
+    page_title="AVS Talent Search Platform",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
+# Custom CSS for professional styling
 st.markdown("""
 <style>
     .main-header {
         background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
         padding: 1.5rem;
-        border-radius: 10px;
+        border-radius: 8px;
         margin-bottom: 2rem;
         color: white;
     }
-    .chat-message {
-        padding: 1rem;
-        border-radius: 10px;
-        margin-bottom: 1rem;
-        animation: fadeIn 0.5s;
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    .user-message {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        margin-left: 20%;
-    }
-    .bot-message {
-        background: rgba(255, 255, 255, 0.1);
-        border-left: 4px solid #2a5298;
-        margin-right: 20%;
-    }
     .skill-tag {
-        background-color: #e5e7eb;
-        padding: 0.25rem 0.5rem;
-        border-radius: 5px;
-        margin: 0.25rem;
+        background-color: #f0f2f6;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin: 2px;
         display: inline-block;
-        font-size: 0.875rem;
+        font-size: 0.85rem;
+        border: 1px solid #d1d5db;
     }
     .match-badge {
-        padding: 0.25rem 0.75rem;
-        border-radius: 20px;
-        font-weight: bold;
+        padding: 4px 12px;
+        border-radius: 16px;
+        font-weight: 600;
+        font-size: 0.8rem;
         display: inline-block;
     }
-    .excellent-match { background-color: #10b981; color: white; }
-    .good-match { background-color: #f59e0b; color: white; }
-    .possible-match { background-color: #6b7280; color: white; }
-    .stTextInput > div > div > input {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
+    .badge-high { background-color: #d1fae5; color: #065f46; }
+    .badge-med { background-color: #fef3c7; color: #92400e; }
+    .badge-low { background-color: #f3f4f6; color: #374151; }
 </style>
 """, unsafe_allow_html=True)
 
 OLLAMA_API_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "llama3"
 
+# --- Helper Functions ---
+
+def ensure_data_exists():
+    """Checks for data and builds indexes if missing."""
+    parsed_dir = Path("data/parsed")
+    index_dir = Path("data/index")
+    
+    if not parsed_dir.exists() or not list(parsed_dir.glob("*.json")):
+        st.warning("No candidate data found.")
+        st.info("Please add resumes to 'data/resumes/' and run the parsing script.")
+        st.stop()
+    
+    if not (index_dir / "faiss.index").exists():
+        with st.spinner("Building search indexes..."):
+            try:
+                subprocess.run([sys.executable, "build_faiss.py"], check=True)
+                subprocess.run([sys.executable, "build_fts.py"], check=True)
+                st.success("Indexes built successfully.")
+                st.rerun()
+            except Exception as e:
+                st.error(f"Failed to build indexes: {e}")
+                st.stop()
+
 def check_ollama_available():
+    """Checks if local LLM is running."""
     try:
-        response = requests.get("http://localhost:11434/api/tags", timeout=2)
+        response = requests.get("http://localhost:11434/api/tags", timeout=1)
         return response.status_code == 200
     except:
         return False
 
 def chat_with_ollama(prompt, context=""):
+    """Interacts with local LLM."""
     try:
-        full_prompt = f"""You are an AI recruitment assistant for AVS company. You help recruiters find and analyze candidates.
-
-Context: {context}
-
-User question: {prompt}
-
-Provide a helpful, concise response. If you're showing candidates, format them clearly with bullet points."""
+        full_prompt = f"""You are a recruitment assistant.
+        Context: {context}
+        User Query: {prompt}
+        Provide a concise, professional response."""
 
         payload = {
             "model": OLLAMA_MODEL,
             "prompt": full_prompt,
             "stream": False,
-            "options": {
-                "temperature": 0.7,
-                "num_predict": 500
-            }
+            "options": {"temperature": 0.3, "num_predict": 300}
         }
         
         response = requests.post(OLLAMA_API_URL, json=payload, timeout=30)
-        
         if response.status_code == 200:
             return response.json()["response"]
-        else:
-            return "Sorry, I couldn't process that request. Please try again."
+        return "AI processing failed."
     except Exception as e:
-        return f"Error connecting to AI: {str(e)}"
+        return f"AI Connection Error: {e}"
+
+def mask_pii(value, reveal=False):
+    """Masks email and phone numbers for privacy."""
+    if not value or reveal:
+        return value
+    if '@' in value:
+        parts = value.split('@')
+        return f"{'*' * 3}@{parts[1]}"
+    return "***-***-****"
+
+def extract_requirements_from_jd(text):
+    """Simple keyword extraction from Job Description."""
+    keywords = [
+        'python', 'java', 'sql', 'aws', 'docker', 'kubernetes', 'react', 
+        'node', 'machine learning', 'nlp', 'pytorch', 'agile', 'scrum'
+    ]
+    found_skills = [k for k in keywords if k in text.lower()]
+    return {
+        'skills': found_skills,
+        'search_query': ' '.join(found_skills) if found_skills else text[:100]
+    }
 
 @st.cache_resource
 def load_retriever():
     return get_retriever()
 
-def get_cv_path(profile):
-    source_file = profile.get('source_file')
-    if source_file:
-        base_path = Path("data/resumes")
-        return base_path / source_file
-    return None
-
-def extract_key_requirements(jd_text):
-    skills = []
-    years_exp = 0
-    
-    skill_keywords = [
-        'python', 'java', 'javascript', 'react', 'node', 'aws', 'azure', 'gcp',
-        'docker', 'kubernetes', 'sql', 'nosql', 'mongodb', 'postgresql',
-        'machine learning', 'ml', 'ai', 'tensorflow', 'pytorch',
-        'automation', 'testing', 'qa', 'selenium', 'jenkins',
-        'validation', 'regulatory', 'medical device', 'gmp', 'fda', 'iso',
-        'project management', 'agile', 'scrum', 'lean', 'six sigma'
-    ]
-    
-    jd_lower = jd_text.lower()
-    for skill in skill_keywords:
-        if skill in jd_lower:
-            skills.append(skill)
-    
-    exp_patterns = [
-        r'(\d+)\+?\s*years?\s+(?:of\s+)?experience',
-        r'(\d+)\+?\s*years?\s+in',
-        r'minimum\s+(?:of\s+)?(\d+)\s+years?'
-    ]
-    for pattern in exp_patterns:
-        match = re.search(pattern, jd_lower)
-        if match:
-            years_exp = max(years_exp, int(match.group(1)))
-    
-    search_query = ' '.join(skills[:5]) if skills else jd_text[:100]
-    
-    return {
-        'skills': skills[:10],
-        'min_experience': years_exp,
-        'search_query': search_query
-    }
-
-def mask_pii(value, reveal=False):
-    if not value or reveal:
-        return value
-    
-    if '@' in value:
-        parts = value.split('@')
-        return f"{'*' * min(len(parts[0]), 3)}@{parts[1]}"
-    else:
-        return f"+1-***-***-{value[-4:]}" if len(value) >= 4 else "***"
-
-def log_action(action_type, details):
-    log_dir = Path("data/logs")
-    log_dir.mkdir(parents=True, exist_ok=True)
-    
-    with open(log_dir / "audit.log", 'a') as f:
-        timestamp = datetime.now().isoformat()
-        user = st.session_state.get('user_email', 'unknown')
-        f.write(f"{timestamp} | user:{user} | {action_type} | {details}\n")
-
-def format_candidate_for_ai(profile):
-    skills = [s['name'] for s in profile.get('skills', [])]
-    return f"""
-Candidate: {profile.get('name', 'Unknown')}
-Role: {profile.get('role_category', 'N/A')}
-Experience: {profile.get('experience_years', 0)} years
-Skills: {', '.join(skills[:10])}
-Location: {profile.get('location', 'Not specified')}
-Work Auth: {profile.get('work_authorization', 'Not specified')}
-"""
-
-def process_ai_query(query, retriever):
-    results = retriever.search(query, k=10)
-    
-    if not results:
-        return "I couldn't find any candidates matching your query. Try different keywords.", []
-    
-    context_parts = []
-    for i, profile in enumerate(results[:5], 1):
-        context_parts.append(f"{i}. {format_candidate_for_ai(profile)}")
-    
-    context = "\n".join(context_parts)
-    
-    response = chat_with_ollama(query, context)
-    
-    return response, results
+# --- Main Application ---
 
 def main():
-    if 'retriever' not in st.session_state:
-        with st.spinner("Loading candidate database..."):
-            st.session_state.retriever = load_retriever()
+    ensure_data_exists()
     
-    if 'ollama_available' not in st.session_state:
-        st.session_state.ollama_available = check_ollama_available()
-    
-    if 'chat_history' not in st.session_state:
-        st.session_state.chat_history = []
-    
-    if 'results' not in st.session_state:
-        st.session_state.results = []
-    
+    # Session State Init
     if 'revealed_pii' not in st.session_state:
         st.session_state.revealed_pii = set()
-    
+    if 'ollama_online' not in st.session_state:
+        st.session_state.ollama_online = check_ollama_available()
+
+    try:
+        retriever = load_retriever()
+    except Exception as e:
+        st.error(f"System Error: {e}")
+        st.stop()
+
+    # Header
     st.markdown("""
     <div class="main-header">
-        <h1> AVS Talent Search Platform</h1>
-        <p style="margin:0;">AI-Powered Recruitment • Find the Perfect Candidate Instantly</p>
+        <h1>AVS Talent Search Platform</h1>
+        <p style="margin:0;">AI-Powered Recruitment & Candidate Analysis</p>
     </div>
     """, unsafe_allow_html=True)
+
+    # Sidebar
+    st.sidebar.title("Navigation")
+    mode = st.sidebar.radio("Search Mode", ["Traditional Search", "JD Match", "AI Assistant"])
     
-    if st.session_state.ollama_available:
-        ai_status = " AI Assistant Active"
-    else:
-        ai_status = " AI Assistant Offline"
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("Filters")
+    role_filter = st.sidebar.selectbox("Role", ["All", "Engineering", "Sales", "Product", "Marketing"])
+    min_exp = st.sidebar.slider("Min Experience", 0, 20, 0)
     
-    st.sidebar.markdown(f"### {ai_status}")
+    # Logic Controller
+    results = []
     
-    mode = st.sidebar.radio(
-        "Search Mode",
-        [" AI Chat Assistant", " JD Match", " Traditional Search"],
-        label_visibility="collapsed"
-    )
-    
-    st.sidebar.divider()
-    st.sidebar.markdown("###  Filters")
-    
-    role_filter = st.sidebar.selectbox(
-        "Role Category",
-        ["All", "Engineering", "Quality Assurance", "Project Management", "Data Science", "Other"]
-    )
-    
-    exp_range = st.sidebar.slider(
-        "Years of Experience",
-        0, 30, (0, 30)
-    )
-    
-    k = st.sidebar.slider("Max Results", 5, 50, 10)
-    
-    required_skills = st.sidebar.text_input(
-        "Required Skills (comma-separated)",
-        placeholder="python, aws, docker"
-    )
-    
-    if mode == "AI Chat Assistant":
-        st.subheader(" AI Chat Assistant")
-        
-        if not st.session_state.ollama_available:
-            st.warning(" AI Assistant is offline. Install Ollama and run 'ollama pull llama3' to enable.")
-        
-        chat_container = st.container()
-        with chat_container:
-            for msg in st.session_state.chat_history:
-                if msg['role'] == 'user':
-                    st.markdown(f'<div class="chat-message user-message"> {msg["content"]}</div>', unsafe_allow_html=True)
-                else:
-                    st.markdown(f'<div class="chat-message bot-message"> {msg["content"]}</div>', unsafe_allow_html=True)
-                    
-                    if 'results' in msg and msg['results']:
-                        with st.expander(f"{len(msg['results'])} Candidates Found"):
-                            for i, profile in enumerate(msg['results'], 1):
-                                col1, col2 = st.columns([3, 1])
-                                with col1:
-                                    st.markdown(f"**{i}. {profile.get('name', 'Unknown')}**")
-                                    skills = [s['name'] for s in profile.get('skills', [])][:5]
-                                    st.caption(f"Skills: {', '.join(skills)}")
-                                with col2:
-                                    if st.button("View Profile", key=f"view_{profile['candidate_id']}_{i}"):
-                                        st.session_state.results = [profile]
-                                        st.rerun()
-        
-        col1, col2 = st.columns([5, 1])
-        with col1:
-            user_message = st.text_input(
-                "Ask AI Assistant",
-                placeholder="e.g., 'Find senior Python engineers with AWS experience' or 'Tell me about John Smith'",
-                key="chat_input",
-                label_visibility="collapsed"
-            )
-        with col2:
-            send_button = st.button("Send", use_container_width=True)
-        
-        st.caption("**Try:** *'Who has medical device experience?'* • *'Compare the top 3 QA engineers'* • *'Find remote workers with Python skills'*")
-        
-        if send_button and user_message:
-            st.session_state.chat_history.append({
-                'role': 'user',
-                'content': user_message
-            })
-            
-            with st.spinner("AI is thinking..."):
-                ai_response, results = process_ai_query(user_message, st.session_state.retriever)
+    # MODE 1: Traditional Search
+    if mode == "Traditional Search":
+        query = st.text_input("Search Candidates", placeholder="e.g. Senior Python Developer with Cloud experience")
+        if st.button("Search Database", type="primary") or query:
+            filters = {}
+            if role_filter != "All":
+                filters['role_category'] = role_filter
+            if min_exp > 0:
+                filters['min_experience'] = min_exp
                 
-                st.session_state.chat_history.append({
-                    'role': 'assistant',
-                    'content': ai_response,
-                    'results': results[:5] if results else []
-                })
-                
-                log_action("ai_chat", f"query='{user_message}' | results={len(results)}")
-            
-            st.rerun()
-    
+            results = retriever.semantic_search(query, k=10, filters=filters)
+
+    # MODE 2: JD Match
     elif mode == "JD Match":
-        st.subheader("Job Description Matcher")
+        st.subheader("Job Description Analysis")
+        jd_text = st.text_area("Paste Job Description", height=200)
         
-        jd_text = st.text_area(
-            "Paste job description",
-            height=200,
-            placeholder="Paste the full job description here..."
-        )
-        
-        if st.button("Analyze JD", type="primary"):
+        if st.button("Analyze & Match"):
             if jd_text:
-                with st.spinner("Analyzing..."):
-                    extracted = extract_key_requirements(jd_text)
-                    st.session_state.jd_extracted = extracted
-                    
-                    if st.session_state.ollama_available:
-                        ai_summary = chat_with_ollama(
-                            f"Summarize this job description in 2-3 sentences:\n{jd_text[:500]}"
-                        )
-                        st.success("JD Analyzed!")
-                        st.info(f"**AI Summary:** {ai_summary}")
-                    else:
-                        st.success("JD Analyzed!")
-                    
-                    st.markdown(f"**Skills Found:** {', '.join(extracted['skills'])}")
-                    if extracted['min_experience'] > 0:
-                        st.markdown(f"**Min Experience:** {extracted['min_experience']} years")
-        
-        if 'jd_extracted' in st.session_state:
-            if st.button("Find Matching Candidates", type="primary"):
-                query = st.session_state.jd_extracted['search_query']
-                results = st.session_state.retriever.search(query, k=15)
-                st.session_state.results = results
-                log_action("jd_match", f"query='{query}' | results={len(results)}")
-    
-    else:
-        st.subheader("Traditional Search")
-        
-        col1, col2 = st.columns([4, 1])
-        with col1:
-            query = st.text_input(
-                "Search by skills, role, or keywords",
-                placeholder="e.g., python aws, QA automation, project manager",
-                label_visibility="collapsed"
-            )
-        with col2:
-            search_button = st.button("🔍 Search", type="primary", use_container_width=True)
-        
-        if search_button and query:
-            with st.spinner("Searching..."):
-                filters = {}
-                if role_filter != "All":
-                    filters['role_category'] = role_filter
-                if exp_range != (0, 30):
-                    filters['min_experience'] = exp_range[0]
-                    filters['max_experience'] = exp_range[1]
+                reqs = extract_requirements_from_jd(jd_text)
+                st.success(f"Extracted Key Skills: {', '.join(reqs['skills'])}")
                 
-                results = st.session_state.retriever.search(query, k=k, filters=filters if filters else None)
+                # AI Summary if available
+                if st.session_state.ollama_online:
+                    with st.spinner("Generating AI Summary..."):
+                        summary = chat_with_ollama(f"Summarize this role in 1 sentence: {jd_text[:500]}")
+                        st.info(f"AI Summary: {summary}")
+
+                results = retriever.semantic_search(reqs['search_query'], k=15)
+
+    # MODE 3: AI Assistant
+    elif mode == "AI Assistant":
+        st.subheader("AI Recruitment Chat")
+        if not st.session_state.ollama_online:
+            st.warning("AI Service Offline. Ensure Ollama is running locally.")
+        else:
+            user_query = st.text_input("Ask the AI", placeholder="Find me candidates who know PyTorch...")
+            if st.button("Send Query") and user_query:
+                # 1. Search first to get context
+                search_res = retriever.semantic_search(user_query, k=5)
                 
-                if required_skills:
-                    required_list = [s.strip().lower() for s in required_skills.split(',')]
-                    filtered = []
-                    for profile in results:
-                        profile_skills = [s['name'].lower() for s in profile.get('skills', [])]
-                        if all(req in ' '.join(profile_skills) for req in required_list):
-                            filtered.append(profile)
-                    results = filtered
+                # 2. Format context for LLM
+                context_str = "\n".join([f"- {r.get('name')}: {r.get('resume_snippet')[:200]}" for r in search_res])
                 
-                st.session_state.results = results
-                log_action("search", f"query='{query}' | results={len(results)}")
-    
-    if st.session_state.results and mode != " AI Chat Assistant":
-        st.divider()
-        st.subheader(f" Found {len(st.session_state.results)} Candidates")
-        
-        for i, profile in enumerate(st.session_state.results, 1):
+                # 3. Get LLM Response
+                with st.spinner("AI is analyzing candidates..."):
+                    ai_response = chat_with_ollama(user_query, context=context_str)
+                    st.markdown(f"**AI Response:**\n\n{ai_response}")
+                    results = search_res
+
+    # --- Results Rendering ---
+    if results:
+        st.markdown(f"### Found {len(results)} Candidates")
+        for profile in results:
             cid = profile['candidate_id']
-            reveal_pii = cid in st.session_state.revealed_pii
             score = profile.get('search_score', 0)
             
-            if score >= 0.7:
-                badge_html = '<span class="match-badge excellent-match"> Excellent Match</span>'
-            elif score >= 0.4:
-                badge_html = '<span class="match-badge good-match"> Good Match</span>'
+            # Badge Logic
+            if score > 0.6:
+                badge_class = "badge-high"
+                match_text = "Excellent Match"
+            elif score > 0.4:
+                badge_class = "badge-med"
+                match_text = "Good Match"
             else:
-                badge_html = '<span class="match-badge possible-match"> Possible Match</span>'
-            
-            with st.expander(
-                f"**#{i} - {profile.get('name', 'Unknown')}** | {profile.get('role_category', 'N/A')} | Match: {score:.0%}",
-                expanded=(i <= 3)
-            ):
+                badge_class = "badge-low"
+                match_text = "Potential Match"
+
+            with st.expander(f"{profile.get('name', 'Candidate')} - {match_text} ({score:.0%})"):
                 col1, col2 = st.columns([3, 1])
                 
                 with col1:
-                    st.markdown(f"### {profile.get('name', 'Unknown')}")
-                    st.markdown(badge_html, unsafe_allow_html=True)
-                    st.caption(f" {profile.get('role_category', 'N/A')} • {profile.get('experience_years', 0)} years")
+                    st.markdown(f"<span class='match-badge {badge_class}'>{match_text}</span>", unsafe_allow_html=True)
+                    st.markdown(f"**Role:** {profile.get('role_category', 'N/A')}")
+                    st.markdown(f"**Experience:** {profile.get('experience_years', 0)} years")
                     
-                    skills = profile.get('skills', [])
-                    if skills:
-                        st.markdown("**Skills:**")
-                        skill_names = [s['name'] for s in skills[:12]]
-                        skill_html = "".join([f'<span class="skill-tag">{s}</span>' for s in skill_names])
-                        st.markdown(skill_html, unsafe_allow_html=True)
+                    # Skills
+                    skills = [s['name'] for s in profile.get('skills', [])][:8]
+                    skill_html = "".join([f"<span class='skill-tag'>{s}</span>" for s in skills])
+                    st.markdown(f"<div style='margin-top:8px'>{skill_html}</div>", unsafe_allow_html=True)
                     
-                    loc = profile.get('location', 'Not specified')
-                    auth = profile.get('work_authorization', 'Not specified')
-                    st.caption(f"{loc} | {auth}")
-                    
-                    email = profile.get('email')
-                    if email:
-                        st.caption(f"📧 {mask_pii(email, reveal_pii)}")
-                
-                with col2:
-                    st.metric("Match", f"{score:.0%}")
-                    
-                    if st.session_state.ollama_available:
-                        if st.button("AI Analysis", key=f"ai_{cid}"):
-                            with st.spinner("Analyzing..."):
-                                candidate_context = format_candidate_for_ai(profile)
-                                insight = chat_with_ollama(
-                                    "Provide a brief analysis of this candidate's strengths and potential fit",
-                                    candidate_context
-                                )
-                                st.info(f"**AI Insight:**\n\n{insight}")
-                
-                col1, col2, col3 = st.columns(3)
-                with col1:
-                    cv_path = get_cv_path(profile)
-                    if cv_path and cv_path.exists():
-                        with open(cv_path, "rb") as file:
-                            st.download_button(
-                                "Download CV",
-                                file,
-                                file_name=cv_path.name,
-                                key=f"download_{cid}"
-                            )
-                with col2:
-                    if not reveal_pii and email:
-                        if st.button("Reveal Contact", key=f"reveal_{cid}"):
-                            st.session_state.revealed_pii.add(cid)
-                            log_action("reveal_pii", f"candidate={cid}")
-                            st.rerun()
-                with col3:
-                    if st.button("Shortlist", key=f"short_{cid}"):
-                        st.success("Added to shortlist!")
+                    st.caption(f"Snippet: ...{profile.get('resume_snippet', '')[:300]}...")
 
-main()
+                with col2:
+                    # PII Handling
+                    is_revealed = cid in st.session_state.revealed_pii
+                    email = profile.get('email', 'N/A')
+                    phone = profile.get('phone', 'N/A')
+                    
+                    st.markdown("#### Contact")
+                    st.text(f"Email: {mask_pii(email, is_revealed)}")
+                    st.text(f"Phone: {mask_pii(phone, is_revealed)}")
+                    
+                    if not is_revealed:
+                        if st.button("Reveal Contact", key=f"rev_{cid}"):
+                            st.session_state.revealed_pii.add(cid)
+                            st.rerun()
+                    
+                    if st.button("Download CV", key=f"dl_{cid}"):
+                        st.toast("Download disabled in demo mode.")
+
+if __name__ == "__main__":
+    main()
